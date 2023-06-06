@@ -146,6 +146,11 @@ html {
     font-size: 1.2rem;
 }
 
+.color h4 {
+    margin-bottom: 2rem;
+
+}
+
 .colors {
     display: flex;
 }
@@ -176,7 +181,7 @@ html {
     border-radius: 0.5rem;
     position: absolute;
     right: -1rem;
-    bottom: 4rem;
+    bottom: 2rem;
     box-shadow: 0 1rem 2rem rgba(28,71,122,0.5);
     display: flex;
     justify-content: center;
