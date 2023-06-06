@@ -48,6 +48,7 @@ html {
     padding: 3rem;
     border-radius: 2.5rem 2.5rem 0 0;
     background: #f1ae0f;
+    transition: background 0.5s;
 }
 
 .card-top-text h1{
@@ -163,12 +164,12 @@ html {
 }
 
 .color-1 {
-    background: #cb4646;
+    background: blue;
     margin-right: 1.5rem;
     box-shadow: 0 1rem 2rem rgba(192, 34, 68, 0.3);
 }
 .color-2 {
-    background: blue;
+    background: #cb4646;
     box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.2);
 }
 
@@ -186,6 +187,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background 0.5s;
 }
 
 .price span {
@@ -199,4 +201,12 @@ html {
 
 .price span:last-child {
     font-weight: bold;
+}
+
+.container.change .card-top{
+    background: #d35246;
+}
+
+.container.change .price{
+    background: #d35246;
 }
