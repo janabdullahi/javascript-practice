@@ -17,6 +17,13 @@ html {
     width: 30rem;
 }
 
+.shoe-2 {
+    width: 33rem;
+    position: absolute;
+    top: -10rem;
+    right: -45rem;
+    transition: transform 1s;
+}
 .container {
     width: 100%;
     height: 100vh;
@@ -31,6 +38,7 @@ html {
     padding: 0 10rem;
     display: grid;
     align-items: center;
+    overflow: hidden;
 }
 
 .card {
@@ -63,6 +71,7 @@ html {
     width: 30rem;
     top: -2.5rem;
     right: -10rem;
+    transition: transform 1s;
 }
 
 .card-bottom {
@@ -209,4 +218,12 @@ html {
 
 .container.change .price{
     background: #d35246;
+}
+
+.container.change .shoe-1 {
+    transform: translateX(-50rem) rotateZ(45deg);
+}
+
+.container.change .shoe-2 {
+    transform: translateX(-40rem) rotateZ(-45deg);
 }
