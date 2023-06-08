@@ -114,3 +114,23 @@ card-holder {
     margin-left: -2rem;
     opacity:0.7;
 }
+
+.container.dark {
+    background-color: #262626;
+}
+
+.container.dark .card {
+    background-color: #353535;
+}
+
+.container.dark .card-left {
+    color: #ccc;
+}
+
+.container.dark .toggle {
+    background-color: #464646;
+}
+
+.container.dark .toggle i{
+    color: #ddd;
+}
