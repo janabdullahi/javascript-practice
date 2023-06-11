@@ -18,6 +18,7 @@ html
     justify-content: center;
     align-items: center;
     perspective: 150rem;
+    overflow: hidden;
 }
 
 .swing 
@@ -29,6 +30,59 @@ html
     transform-style: preserve-3d;
     position: absolute;
     top: 50%;
+    transform-origin: top;
+}
+
+.swing-1
+{
+    animation: swingAnim 20s infinite ease-in-out;
+}
+
+.swing-2
+{
+    animation: swingAnim 20s -4s infinite ease-in-out;
+}
+
+.swing-3
+{
+    animation: swingAnim 20s -8s infinite ease-in-out;
+}
+
+.swing-4
+{
+    animation: swingAnim 20s -12s infinite ease-in-out;
+}
+
+.swing-5
+{
+    animation: swingAnim 20s -16s infinite ease-in-out;
+}
+@keyframes swingAnim
+{
+    0% {
+        transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(100rem);
+    }
+    20% {
+        transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(21rem);
+    }
+    25% {
+        transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(27rem);
+    }
+    35%,40% {
+        transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY();
+    }
+    50% {
+        transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(-60rem);
+    }
+    55% {
+        transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(-55rem);
+    }
+    65%,70% {
+        transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(-84rem);
+    }
+    100% {
+        transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(-800rem);
+    }
 }
 
 .swing::before 
@@ -121,7 +175,7 @@ html
 {
     top: 10rem;
     right: 2.5rem;
-}
+}swingAnim
 
 .rope::before
 {
@@ -144,3 +198,46 @@ html
     transform: translateY(-23rem) rotateZ(-21deg);
     transform-origin: bottom;
 } 
+
+.ball 
+{
+    width: 7rem;
+    aspect-ratio: 1;
+    background-image: linear-gradient(rgba(159, 238, 156, 0.9), rgba(30, 110, 6, 0.8));
+    position: relative;
+    left: 15rem;
+    top: 10rem;
+    border-radius: 50%;
+    transform: rotateX(90deg) rotateY(40deg);
+    transform-origin: top;
+    box-shadow: 0 0 0.2rem #333;
+}
+
+@keyframes swing6Anim
+{
+    0% {
+        transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(0);
+    }
+    50% {
+        transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(30rem);
+    }
+    100% {
+        transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(0);
+    }
+}
+
+.swing-6 
+{
+    animation: swing6Anim 4s -1s infinite ease-in-out;
+    background-color: transparent;
+}
+
+.swing-6 div:not(.ball)
+{
+    opacity: 0;
+}
+
+.swing-6::after,.swing-6::before 
+{
+    opacity: 0;
+}
