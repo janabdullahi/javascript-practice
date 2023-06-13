@@ -44,26 +44,36 @@ html {
 
 .menu-item:nth-child(1){
     transform: rotateY(-70deg) rotateX(20deg) translateX(-50rem) translateY(-15rem) translateZ(-50rem);
+    transition: transform 1.2s ease-in, opacity 1s ease-in;
 }
 
 .menu-item:nth-child(2){
     transform: rotateY(-70deg) rotateX(20deg) translateX(-20rem) translateY(-5rem) translateZ(-20rem);
+    transition: transform 1s ease-in, opacity 1s ease-in;
 }
 
 .menu-item:nth-child(3){
     transform:  rotateX(20deg);
+    transition: transform 1s;
 }
 
 .menu-item:nth-child(4){
     transform: rotateY(70deg) rotateX(20deg) translateX(20rem) translateY(-5rem) translateZ(-20rem);
+    transition: transform 1s ease-in, opacity 1s ease-in;
 }
 
 .menu-item:nth-child(5){
     transform: rotateY(70deg) rotateX(20deg) translateX(50rem) translateY(-15rem) translateZ(-50rem);
+    transition: transform 1.2s ease-in, opacity 1s ease-in;
 }
 
 .menu-item i {
     font-size: 7rem;
     color: #222;
     
+}
+
+.change.menu .menu-item {
+    transform: rotateX(0) rotateY(0) translateX(0) translateY(0) translateZ(0);
+    opacity: 1;
 }
