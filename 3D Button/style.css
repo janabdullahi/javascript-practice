@@ -77,3 +77,12 @@ html {
     transform: rotateX(0) rotateY(0) translateX(0) translateY(0) translateZ(0);
     opacity: 1;
 }
+
+.menu-item:hover {
+    background-color: #ccccff;
+    box-shadow: 0 0 3rem rgba(100, 100, 255, 0.6);
+}
+
+.menu-item:hover i {
+    color: #6464ff;
+}
